@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Charis SIL', serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #fefae0;
+}
+
+/* grids */
+
+#grid-contenedor-padre-home {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "content content content content"
+    "footer footer footer footer"
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px auto 60px;
+    grid-row-gap: 100px;
+    grid-column-gap: 15px;
+}
+
+#grid-contenedor-padre-sobremi {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "content content"
+    "footer footer"
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px auto 60px;
+    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+}
+
+#grid-contenedor-padre-recetas {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "img1 receta1"
+    "receta2 img2"
+    "img3 receta3"
+    "receta4 img4"
+    "img5 receta5"
+    "receta6 img6"
+    "footer footer"
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px auto auto auto auto auto auto 60px;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+}
+
+#grid-contenedor-padre-preguntas {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer"
+    ;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px auto 60px;
+    grid-row-gap: 20px;
+    
+}
+
+#grid-contenedor-padre-contacto {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "content content"
+    "footer footer"
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px auto 60px;
+    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+}
+
+
+/* elementos en comun */
+
+header ul{
+    display: flex;
+    justify-content: flex-start;
+    align-content:space-around;
+    margin: 2em auto;
+    margin-left: 1em;
+}
+
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3em;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #606c38;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.fa-solid {
+    color: white;
+    margin: 1em ;
+}
+
+.fa-brands {
+    color: white;
+    margin: 1em;
+}
+
+/* pagina home */
+#header-home {
+    grid-area: header;
+    background-image: url(../img/portada_menu.jpg);
+    background-size: cover;
+}
+#main-home{
+    grid-area: content;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: #bc6c25;
+}
+#h1-home {
+    font-size: 3em;
+    margin-top: 2em;
+    text-align: center;
+    color: white;
+}
+
+
+/* pagina sobre mi */
+#header-sobremi {
+    grid-area: header;
+    background-color: #283618;
+}
+
+#main-sobremi {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+#h1-sobremi{
+    font-size: 3em;
+    text-align: center;
+    color: #dda15e;
+}
+#sobreMiImg {
+    width: 50em;
+    height: auto;
+}
+
+.div-titulo-parrafo {
+    display: inline;
+    color: #bc6c25;
+    margin: 5em 2em;
+}
+article a img {
+    width: 300px;
+    height: auto;
+}
+
+/* pagina recetas */
+.img-recetas {
+    width: 500px;
+    height: auto;
+    margin: 1em;
+}
+
+#header-recetas {
+    grid-area: header;
+    background-image: url(../img/portada_recetas.jpg);
+    background-size: cover;
+}
+
+#img-receta1 {
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#receta1 {
+    grid-area: receta1;  
+}
+#img-receta2 {
+    grid-area: img2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#receta2 {
+    grid-area: receta2;
+}
+#img-receta3 {
+    grid-area: img3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#receta3 {
+    grid-area: receta3;
+}
+#img-receta4 {
+    grid-area: img4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#receta4 {
+    grid-area: receta4;
+}
+#img-receta5 {
+    grid-area: img5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#receta5 {
+    grid-area: receta5;
+}
+#img-receta6 {
+    grid-area: img6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#receta6 {
+    grid-area: receta6;
+}
+
+
+.div-receta {
+    margin: 3em;
+    color: rgb(59, 59, 59);
+}
+
+.container {
+    margin: 5px 15px 5px 15px;
+    display: inline-block;
+    width: 20em;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* pagina preguntas frecuentes */
+
+#content-preguntas {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-container {
+    width: 70em;
+    height: 10em;
+    background-color: rgb(216, 188, 127);
+    color: rgb(85, 44, 11);
+    margin: 2em;
+    text-align: center;
+    padding: 2em;
+}
+
+/* pagina contacto */
+
+#header-contacto {
+    grid-area: header;
+    background-image: url(../img/portada_contacto.jpg);
+    background-size: cover;
+}
+
+#content-contacto {
+    display: flex;
+    background-color: wheat;
+    height: 27em;
+    width: 20em;
+    padding: 2em;
+}
+
+#contenedor-main-contacto {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #bc6c25;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+    color: #bc6c25;
+}
+
+.form-style {
+    color: #dda15e;
+    background-color: #fefae0;
+    border-color: #fefae0;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+#consultas {
+    margin-bottom: 20px;
+    background-color: #fefae0;
+    border-color: #fefae0;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.boton {
+    background-color: #bc6c25;
+    border-color: #bc6c25;
+    border-style: solid;
+    border-radius: 3px;
+    color: #fefae0;
+}
+
+
+  
+
+/* media queries */
+@media screen and (max-width : 480px) {
+    #grid-contenedor-padre-home {
+        grid-template-areas: 
+        "header"
+        "content"
+        "footer"
+        ;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto 20px;
+  
+    }  
+    header ul{
+        flex-direction: column;
+        align-items: center;
+        margin: 2em;
+    }
+
+    #h1-home {
+        display: none;
+    }
+
+    header ul li a{
+        font-size: 1em;
+    }
+
+    #main-home{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header-home {
+        background-size:cover;
+        background-position: center;
+    }
+
+    #grid-contenedor-padre-sobremi {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "content"
+        "footer"
+        ;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto 20px;
+    }
+
+    #main-sobremi {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    #sobreMiImg {
+        width: 20em;
+    }
+    #h1-sobremi{
+        font-size: 2em;
+
+    }
+    .div-titulo-parrafo {
+        margin: 2em 2em;
+    }
+
+    #grid-contenedor-padre-recetas {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "img1"
+        "receta1"
+        "img2"
+        "receta2"
+        "img3"
+        "receta3"
+        "img4"
+        "receta4"
+        "img5"
+        "receta5"
+        "img6"
+        "receta6"
+        "footer"
+        ;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto auto auto auto auto auto auto auto auto auto auto auto 20px;
+    }
+
+    .div-receta {
+        font-size: small;
+    }
+
+    .img-recetas {
+        width: 100%;
+        height: auto;
+        margin: 1em;
+    }
+
+    #grid-contenedor-padre-preguntas {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "content"
+        "footer"
+        ;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto 20px;
+    }
+
+    .div-container {
+        font-size: medium;
+        width: 80%;
+        height: 15em;
+    }
+
+    #grid-contenedor-padre-contacto {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "content"
+        "footer"
+        ;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto 20px;
+    }
+    
+    #header-contacto {
+        background-size:cover;
+        background-position: center;
+    }
+    
+}
+
+
+
