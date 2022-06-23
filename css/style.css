@@ -150,11 +150,46 @@ footer {
     color: white;
 }
 
+.container {
+    margin: 5px 15px 5px 15px;
+    display: inline-block;
+    width: 20em;
+    text-align: center;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.container:hover {
+    border-style: solid;
+    border-color: #ddb484;
+    padding: 10px;
+    background-color: #f8f3ce;
+
+}
+
+article a img {
+    width: 300px;
+    height: auto;
+}
+
 
 /* pagina sobre mi */
 #header-sobremi {
     grid-area: header;
     background-color: #283618;
+    animation-name: color_header;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes color_header {
+    0%{ background-color: #283618;}
+    25%{ background-color: #bc6c25;}
+    50%{ background-color: #606c38;}
+    75% { background-color: #dda15e;}
+    100%{background-color: #283618;}
 }
 
 #main-sobremi {
@@ -168,6 +203,7 @@ footer {
     font-size: 3em;
     text-align: center;
     color: #dda15e;
+
 }
 #sobreMiImg {
     width: 50em;
@@ -179,10 +215,7 @@ footer {
     color: #bc6c25;
     margin: 5em 2em;
 }
-article a img {
-    width: 300px;
-    height: auto;
-}
+
 
 /* pagina recetas */
 .img-recetas {
@@ -258,13 +291,6 @@ article a img {
     color: rgb(59, 59, 59);
 }
 
-.container {
-    margin: 5px 15px 5px 15px;
-    display: inline-block;
-    width: 20em;
-    text-align: center;
-    overflow: hidden;
-}
 
 /* pagina preguntas frecuentes */
 
@@ -299,6 +325,9 @@ article a img {
     height: 27em;
     width: 20em;
     padding: 2em;
+    background: rgb(236,193,147);
+    background: linear-gradient(90deg, rgba(236,193,147,1) 0%, rgba(255,218,163,1) 100%);
+    border-radius: 5px;
 }
 
 #contenedor-main-contacto {
@@ -326,13 +355,6 @@ form {
     border-radius: 3px;
 }
 
-#consultas {
-    margin-bottom: 20px;
-    background-color: #fefae0;
-    border-color: #fefae0;
-    border-style: solid;
-    border-radius: 3px;
-}
 
 .boton {
     background-color: #bc6c25;
