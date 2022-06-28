@@ -5,76 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charis+SIL&family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/00402b2263.js" crossorigin="anonymous"></script>
     <title>EG Nutricion - contacto</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/stylesnew.css">
+    <script src="https://kit.fontawesome.com/00402b2263.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div id="grid-contenedor-padre-contacto">
         <!-- encabezado imagen de portada con logo + menu  -->
-        <header id="header-contacto">
-            <nav>
-                <ul>
-                    <li> <a href="../index.html">HOME</a></li>
-                    <li> <a href="sobre_mi.html">SOBRE MI</a></li>
-                    <li> <a href="recetas.html">RECETAS</a></li>
-                    <li> <a href="preguntas.html">PREGUNTAS</a></li>
-                    <li> <a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="contenedor-main-contacto">
-            <main id="content-contacto">
-                <form action="#">
-                    <label for="nombre" class="margin-bottom"> Nombre completo:
-                        <input type="text" placeholder="Nombre y Apellido" name="nombre" class="form-style">
-                    </label> 
-                    <label for="email" class="margin-bottom">Email:
-                        <input type="email" placeholder="@gmail.com" name="email" class="form-style">
-                    </label>
-                    <div>Sexo:
-                        <div>Masculino
-                            <input type="radio" name="Masculino" value="Masculino" class="form-style">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">EG</a>
+        
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item"> <a class="nav-link" href="../index.html">HOME</a></li>
+                <li class="nav-item"> <a class="nav-link" href="sobre_mi.html">SOBRE MI</a></li>
+                <li class="nav-item"> <a class="nav-link" href="recetas.html">RECETAS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="preguntas.html">PREGUNTAS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="contacto.html">CONTACTO</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main>
+            <form class="container">
+                <div class="row d-flex justify-content-center mt-4 mb-4">
+                    <div class="col-10 col-md-6">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Nombre</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Apellido</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+                                </div>
+                            </div>
                         </div>
-                        <div class="margin-bottom">Femenino
-                            <input type="radio" name="Femenino" value="Femenino" class="form-style">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Email</label>
+                                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="@gmail.com">
+                                </div>
+                            </div>
                         </div>
-                    </div> 
-                    <label for="Consultas">Consultas: <br>
-                        <textarea placeholder="Consultas"  class="margin-bottom form-style"  cols="40" rows="4"></textarea>
-                    </label> 
-                    <input type="number" placeholder="Edad" class="margin-bottom form-style"> 
-                    <div>Elegi tu turno:
-                        <div>Virtual
-                            <input type="radio" name="Virtual" value="Virtual" class="form-style">
-                        </div> 
-                        <div  class="margin-bottom">Prescencial:
-                            <input type="radio" name="prescencial" value="Prescencial" class="form-style">
+                        <div class="row d-flex justify-content-center justify-content-md-center">
+                            <div class="col-12 col-md-5">
+                                <div class="form-check">
+                                    <label for="exampleFormControlSelect1">Genero</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Mujer</option>
+                                      <option>Hombre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="form-check">
+                                    <label for="exampleFormControlSelect1">Consulta</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Virtual</option>
+                                      <option>Prescencial</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Consulta</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                    Recibir Newsletter
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center justify-content-md-end">
+                                <button type="submit" class="btn btn-info">Enviar</button>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="margin-bottom">Queres recibir un newsletter?
-                        <input type="checkbox" name="si" value="si" class="form-style">
-                    </div>
-                    <input type="submit" value="Enviar" class="boton">
-                </form>
-            </main>  
-        </div>    
+                </div>
+            </form>
+        </main>  
+    </div>    
 
-        <!-- pie de pagina -->
-        <footer>
-            <a href="https://www.instagram.com/eg_nutricion/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/EG-Nutricion-102800978440071/" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
-                <!-- hay que actualizar el link para enviar mail, el que puse es de ejemplo -->
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-        </footer>
-    </div>
+    <!-- pie de pagina -->
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-12 col-md-12 d-flex justify-content-center">
+                    <div>
+                        <a href="https://www.instagram.com/eg_nutricion/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/EG-Nutricion-102800978440071/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
+                            <!-- hay que actualizar el link para enviar mail, el que puse es de ejemplo -->
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>

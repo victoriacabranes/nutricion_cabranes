@@ -5,70 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charis+SIL&family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/00402b2263.js" crossorigin="anonymous"></script>
     <title>EG Nutricion</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/stylesnew.css">
+    <script src="https://kit.fontawesome.com/00402b2263.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div id="grid-contenedor-padre-home">
-        <!-- encabezado imagen de portada con logo + menu  -->
-        <header id="header-home">
-            <nav>
-                <ul>
-                    <li> <a href="index.html">HOME</a></li>
-                    <li> <a href="pages/sobre_mi.html">SOBRE MI</a></li>
-                    <li> <a href="pages/recetas.html">RECETAS</a></li>
-                    <li> <a href="pages/preguntas.html">PREGUNTAS</a></li>
-                    <li> <a href="pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <h1 id="h1-home">TE AYUDO A GENERAR HABITOS SALUDABLES</h1>
-        </header>
+    <!-- encabezado imagen de portada con logo + menu  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">EG</a>
+        
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item"> <a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/sobre_mi.html">SOBRE MI</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/recetas.html">RECETAS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/preguntas.html">PREGUNTAS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/contacto.html">CONTACTO</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    
 
-        <!-- articulos de la info de home que referencian a las paginas del sitio -->
-        <main id="main-home">
-            <section class="container">
-                    <a href="pages/sobre_mi.html">
-                        <img src="img/euge.jpg" alt="Euge" srcset="">
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</p>
-            </section>
-            <section class="container">
-                    <a href="pages/recetas.html">
-                        <img src="img/euge_1.jpeg" alt="Euge cocinando" srcset="">
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</p>
-            </section>
-            <section class="container">
-                    <a href="pages/preguntas.html">
-                        <img src="img/preguntas.jpg" alt="pregunta" srcset="">
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</p>
-            </section>
-            <section class="container">
-                    <a href="pages/contacto.html">
-                        <img src="img/euge_2.jpeg" alt="Euge en su consultorio" srcset="">
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</p>
-            </section>
-        </main>
-
-    <!-- pie de pagina -->
-        <footer>
-            <a href="https://www.instagram.com/eg_nutricion/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/EG-Nutricion-102800978440071/" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
-                <!-- hay que actualizar el link para enviar mail, el que puse es de ejemplo -->
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            
-        </footer>
+    <div class="container">
+        <div class="row mb-4 mt-4">
+            <div class="col-8 col-md-12">
+                <div class=" d-flex justify-content-md-center">
+                    <h1 class="display-4">TE AYUDO A GENERAR HABITOS SALUDABLES</h1>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <section class="container-fluid">
+        <!-- articulos de la info de home que referencian a las paginas del sitio -->
+        <div class="row mt-5 mb-5">
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <a href="pages/sobre_mi.html">
+                        <img class="card-img-top" src="img/euge.jpg" alt="Euge" srcset="">
+                    </a>
+                    <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+                </div>
+            </div>
+
+            <div  class="col-12 col-md-3">
+                <div class="card">
+                    <a href="pages/recetas.html">
+                        <img class="card-img-top" src="img/euge_1.jpeg" alt="Euge cocinando" srcset="">
+                    </a>
+                    <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+                </div>
+            </div>
+
+            <div  class="col-12 col-md-3">
+                <div class="card">
+                    <a href="pages/preguntas.html">
+                        <img class="card-img-top"  src="img/preguntas.jpg" alt="pregunta" srcset="">
+                    </a>
+                    <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+                </div>    
+            </div>
+
+            <div  class="col-12 col-md-3">
+                <div class="card">
+                    <a href="pages/contacto.html">
+                    <img class="card-img-top" src="img/euge_2.jpeg" alt="Euge en su consultorio" srcset="">
+                </a>
+                <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+            </div>
+        </div>
+    </section>
+
+<!-- pie de pagina -->
+    <footer class="bg-light">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12 col-md-12 d-flex justify-content-center">
+                        <div>
+                            <a href="https://www.instagram.com/eg_nutricion/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/EG-Nutricion-102800978440071/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
+                                <!-- hay que actualizar el link para enviar mail, el que puse es de ejemplo -->
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
 </body>
 </html>
