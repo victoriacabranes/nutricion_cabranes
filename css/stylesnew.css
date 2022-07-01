@@ -18,3 +18,31 @@
     background-color: rgb(90, 90, 4);
     border-color: rgb(90, 90, 4);
 }
+
+.card-display {
+    transition: all 1s;
+}
+
+.card-display:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+.display-4 {
+    font-size: 2rem;
+}
+
+header {
+    background-image: url("../img/portada_recetas.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+}
+
+.font-light {
+    color: white;
+}
