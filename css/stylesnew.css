@@ -1,22 +1,27 @@
+
 .fa-solid {
-    color: gray;
+    color: #58583e;
     margin: 1em ;
 }
 
 .fa-brands {
-    color: gray;
+    color: #58583e;
     margin: 1em;
 }
 
+.bg-green {
+    background-color: #d6ce93;
+}
+
 .btn-info {
-    background-color: olive;
-    border-color: olive;
+    background-color: #d8a48f;
+    border-color: #d8a48f;
     color: white;
 }
 
 .btn-info:hover {
-    background-color: rgb(90, 90, 4);
-    border-color: rgb(90, 90, 4);
+    background-color: #bb8588;
+    border-color: #bb8588;
 }
 
 .card-display {
@@ -36,6 +41,14 @@
     font-size: 2rem;
 }
 
+.display-3 {
+    font-size: 2.5rem;
+}
+
+.font-weight-light {
+    font-size: 1.5rem;
+}
+
 header {
     background-image: url("../img/portada_recetas.jpg");
     background-size: cover;
@@ -43,6 +56,83 @@ header {
     height: 20rem;
 }
 
-.font-light {
-    color: white;
+#header-sobremi {
+    background-image: url("../img/portada_sobremi.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 20rem;
+}
+
+#header-contacto {
+    background-image: url("../img/portada_contacto2.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 20rem;
+}
+
+#header-recetas {
+    background-image: url("../img/portada_recetas2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+}
+
+
+#header-preguntas {
+    background-image: url("../img/portada_preguntas.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+}
+
+
+.font-pink {
+    color: #bb8588;
+}
+
+
+.border-form {
+    border-radius: 10px;
+    border: solid;
+    border-color: #e6bcac;
+    border-width: 1px;
+}
+
+.form-check {
+    padding-left: 0%;
+}
+
+@media screen and (max-width : 480px) {
+    header {
+        background-image: none;
+        height: 0%;
+    }
+
+    #header-sobremi {
+        background-image: none;
+        height: 0%;
+    }
+
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    #header-contacto {
+        background-image: none;
+        height: 0%;
+    }
+
+    #header-preguntas {
+        background-image: none;
+        height: 0%;
+    }
+
+    #header-recetas {
+        background-image: none;
+        height: 0%;
+    }
+
+    .border-form {
+        border: solid transparent;
+    }
 }

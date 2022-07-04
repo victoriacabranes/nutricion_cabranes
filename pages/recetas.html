@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- encabezado imagen de portada con logo + menu  -->
-    <header>
+    <header id="header-recetas">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,16 +32,30 @@
             </div>
         </nav>
     </header>
+
+    <!-- titulo  -->
+    <div class="container">
+        <div class="row mt-3 mt-md-5 mt-lg-5 justify-content-center ">
+            <div class="col-10 col-md-12 col-lg-12 d-flex justify-content-md-center justify-content-lg-center flex-column flex-md-column flex-lg-column">
+                <h1 class="display-3 text-center">RECETAS SALUDABLES</h1>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center justify-content-md-center justify-content-lg-center">
+            <div class="col-8 col-md-8 col-lg-8">
+                <hr>
+            </div>
+        </div>
+    </div>
     
     <!-- recetas -->
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container">
+        <div class="row mt-3 mt-md-5 mt-lg-5">
             <div class="col-12 col-md-6">
-                <img class="img-fluid mb-5" src="../img/receta1.jpg" alt="pollo a la crema de espinaca">
+                <img class="img-fluid mb-3" src="../img/receta1.jpg" alt="pollo a la crema de espinaca">
             </div>
             <div class="col-12 col-md-6">
-                <h2 class="display-4 mb-4">Pollo a la crema de espinaca</h2>
-                <ul><h3>Ingredientes:</h3>
+                <h2 class="display-4 mb-4 font-pink">Pollo a la crema de espinaca</h2>
+                <ul><h3 class="font-pink font-weight-light">Ingredientes:</h3>
                     <li>Pechugas de pollo abiertas</li>
                     <li>1 vaso de leche descremada </li>
                     <li>1 cucharada de maicena </li>
@@ -50,7 +64,7 @@
                     <li>1/2 taza de ricota </li>
                 </ul>
         
-                <h3>Procedimiento:</h3>
+                <h3 class="font-pink font-weight-light">Procedimiento:</h3>
                 <p>Cocina las pechugas en el horno(yo las condimenté solo con sal y pimienta)
                 Cocina en sartén caliente la cebolla con el diente de ajo, y una vez que estén blanditos agrega la espinaca 
                 Agrega la leche que tiene que estar mezclada en frío con la maicena y revolve hasta que espese 
@@ -63,15 +77,18 @@
         
         <div class="row">
             <div class="col-12 col-md-6">
-                <h2 class="display-4 mb-4">Nuggets de pollo</h2>
-                <ul><h3>Ingredientes:</h3>
+                <h2 class="display-4 font-pink">Nuggets de pollo</h2>
+                <ul><h3 class="font-pink font-weight-light">Ingredientes:</h3>
                     <li>2 pechugas de pollo (pedilas abiertas para que rindan más)</li>
                     <li>2 tazas de harina de avena(solo tenes que licuar o procesar la avena)</li>
                     <li>2 huevos</li>
-                    <li>Sal,pimienta,pimentón y ajo en polvo</li>
+                    <li>Sal</li>
+                    <li>Pimienta</li>
+                    <li>Pimenton</li>
+                    <li>Ajo en polvo</li>
                 </ul>
         
-                <h3>Procedimiento:</h3>
+                <h3 class="font-pink font-weight-light">Procedimiento:</h3>
                 <p>Precalenta el horno. Corta las pechugas en trozos.Mezcla la harina de avena con los condimentos (puede ser también pan rallado).
                 Batí los huevos en un recipiente.Sumergí los trozos de pollo en el huevo y pasalos por la mezcla de avena.
                 Hornea los nuggets por 15 minutos de cada lado(aprox) y listo.</p> 
@@ -87,8 +104,8 @@
                 <img class="img-fluid mb-5" src="../img/receta3.jpg" alt="pan de queso">
             </div>
             <div class="col-12 col-md-6">
-                <h2 class="display-4 mb-4">Pan de queso</h2>
-                <ul><h3>Ingredientes:</h3>
+                <h2 class="display-4 font-pink mb-4">Pan de queso</h2>
+                <ul><h3 class="font-pink font-weight-light">Ingredientes:</h3>
                     <li>Fécula de mandioca 275g</li>
                     <li>Leche 120 cc</li>
                     <li>Agua 120cc</li>
@@ -98,7 +115,7 @@
                     <li>Sal c/n</li>
                 </ul>
         
-                <h3>Procedimiento:</h3>
+                <h3 class="font-pink font-weight-light">Procedimiento:</h3>
                 <p>Coloca en una cacerola el aceite,la leche, el agua y la sal. Lleva a fuego fuerte hasta que hierva
                 Saca del fuego la cacerola y agrega la fécula de mandioca de a poco integrando bien
                 Deja enfriar y luego agrega los huevos y el queso rallado o picado bien chiquito
@@ -110,9 +127,17 @@
             
          <div class="row">
             <div class="col-12 col-md-6">
-                <h2 class="display-4 mb-4">Milanesas</h2>
+                <h2 class="display-4 font-pink mb-4">Milanesas</h2>
+                <ul><h3 class="font-pink font-weight-light">Ingredientes:</h3>
+                    <li>Huevo</li>
+                    <li>Perejil</li>
+                    <li>Sal</li>
+                    <li>Carne</li>
+                    <li>Pan rallado</li>
+                    <li>Verduras para ensalada a gusto</li>
+                </ul>
             
-                <h3>Procedimiento:</h3>
+                <h3 class="font-pink font-weight-light">Procedimiento:</h3>
                 <p>Solo tenes que sumergir en una mezcla de huevo,perejil y sal el corte de carne que quieras (cuanto más magro,mejor).Yo dejo reposar la carne en esta mezcla por media hora.La proporción para 12 bifes de carne es 4 huevos.
                 Después pasas por pan rallado y solo queda hornear 
                 Esta vez la acompañe de una ensalada de choclo,tomate, zanahoria rallada y un poquito de perejil</p>
@@ -127,21 +152,31 @@
                 <img class="img-fluid mb-5" src="../img/receta5.jpg" alt="tacos de pollo">
             </div>
             <div class="col-12 col-md-6">
-                <h2 class="display-4 mb-4">Tacos de pollo</h2>
+                <h2 class="display-4 font-pink mb-4">Tacos de pollo</h2>
+                <ul><h3 class="font-pink font-weight-light">Ingredientes:</h3>
+                    <li>Harina de trigo 250gr</li>
+                    <li>Aceite 2 cdas</li>
+                    <li>Agua 2/3 de taza</li>
+                    <li>Sal</li>
+                    <li>Pechuga de pollo</li>
+                    <li>Tomates 3</li>
+                    <li>Aceite de Oliva 2cdas</li>
+                    <li>Pimienta</li>
+                </ul>
             
-                <h3>Procedimiento:</h3>
-                <p>Para las tortillas integra y amasa: 250 g de harina de trigo (puede ser integral) con 2 cucharadas de aceite, 3/4 taza de agua(aprox.)y sal. <br>
+                <h3 class="font-pink font-weight-light">Procedimiento:</h3>
+                <p>Para las tortillas integra y amasa: la harina de trigo (puede ser integral) con las cucharadas de aceite, los 3/4 taza de agua(aprox.)y sal. <br>
                 Por otro lado cocina 1 pechuga de pollo y luego desmenuza. <br>
-                Para la salsa hornea por 30 minutos 3 tomates con 2 cucharadas de aceite de oliva, sal y pimienta. Luego licua. <br>
+                Para la salsa hornea por 30 minutos los tomates con las cucharadas de aceite de oliva, sal y pimienta. Luego licua. <br>
                 Integra la salsa con el pollo, cocina por unos minutos y listo. <br>
                 Los tacos los arme con la salsa de pollo, le agregue queso rallado y perejil picado</p>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-5 mb-md-5 mb-lg-5">
             <div class="col-12 col-md-6">
-                <h2 class="display-4 mb-4">Galletitas de avena y mantequilla</h2>
-                <ul><h3>Ingredientes:</h3>
+                <h2 class="display-4 font-pink mb-4">Galletitas de avena y mantequilla</h2>
+                <ul><h3 class="font-pink font-weight-light">Ingredientes:</h3>
                 <li>1/2 taza de mantequilla de mani natural </li>
                 <li>1 huevo </li>
                 <li>1/3 taza de avena </li>
@@ -153,7 +188,7 @@
                 <li>Polvo de hornear</li>
                 </ul>
         
-                <h3>Procedimiento:</h3>
+                <h3 class="font-pink font-weight-light">Procedimiento:</h3>
                 <p>Precalenta el horno a temperatura media <br>
                 Mezcla en un tazón todos los ingredientes y forma las galletitas <br>
                 Hornea por 15/20 minutos </p>
@@ -164,9 +199,9 @@
             </div>
         </div>
 
-
+    </div>
     <!-- pie de pagina -->
-    <footer class="bg-light">
+    <footer class="bg-green">
         <div class="container">
             <div class="row pt-5 pb-5">
                 <div class="col-12 col-md-12 d-flex justify-content-center">

@@ -14,9 +14,9 @@
 
 </head>
 <body>
-    <!-- encabezado imagen de portada con logo + menu  -->
+    <!-- encabezado imagen de portada + nav  -->
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,64 +34,73 @@
         </nav>
     </header>
 
-
+<!-- titulo -->
 
     <div class="container">
-        <div class="row mb-4 mt-4">
-            <div class="col-8 col-md-12 col-lg-12">
-                <div class=" d-flex justify-content-md-center justify-content-lg-center">
-                    <h1 class="display-4">TE AYUDO A GENERAR HABITOS SALUDABLES</h1>
-                </div>
+        <div class="row mt-3 mt-md-5 mt-lg-5 justify-content-center ">
+            <div class="col-10 col-md-12 col-lg-12 d-flex justify-content-md-center justify-content-lg-center flex-column flex-md-column flex-lg-column">
+                <h1 class="display-3 text-center">TE AYUDO A GENERAR HÁBITOS SALUDABLES</h1>
+                <p class="lead text-center">EG Nutrición</p>
             </div>
         </div>
-        <div class="row d-flex justify-content-md-center">
-            <div class="col-4 col-md-8 col-lg-8">
+        <div class="row d-flex justify-content-center justify-content-md-center justify-content-lg-center">
+            <div class="col-8 col-md-8 col-lg-8">
                 <hr>
             </div>
         </div>
     </div>
+
+<!-- seccion cards -->
     <section class="container-fluid">
-        <!-- articulos de la info de home que referencian a las paginas del sitio -->
-        <div class="row mt-5 mb-5">
-            <div class="col-12 col-md-3">
-                <div class="card card-display">
+        <div class="row mt-md-5 mb-md-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card card-display mb-5 mb-md-5">
                     <a href="pages/sobre_mi.html">
                         <img class="card-img-top" src="img/euge.jpg" alt="Euge" srcset="">
                     </a>
-                    <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+                    <div class="card-body text-center text-md-center text-lg-center">Hola! Me llamo Euge Galbuchi y soy Licenciada en nutrición.
+                        Me encanta poder ayudar a las personas que necesitan y quieren cambiar sus hábitos alimentarios.
+                    </div>
                 </div>
             </div>
 
-            <div  class="col-12 col-md-3">
-                <div class="card card-display">
+            <div  class="col-12 col-md-6 col-lg-3">
+                <div class="card card-display mb-5 mb-md-5">
                     <a href="pages/recetas.html">
                         <img class="card-img-top" src="img/euge_1.jpeg" alt="Euge cocinando" srcset="">
                     </a>
-                    <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+                    <div class="card-body text-center text-md-center text-lg-center">Comer rico y saludable es posible. Aqui te comparto
+                        algunas de mis recetas favoritas que son muy faciles y sencillas para ayudarte a mejorar la alimentación.
+                    </div>
                 </div>
             </div>
 
-            <div  class="col-12 col-md-3">
-                <div class="card card-display">
+            <div  class="col-12 col-md-6 col-lg-3">
+                <div class="card card-display mb-5 mb-md-5">
                     <a href="pages/preguntas.html">
                         <img class="card-img-top"  src="img/preguntas.jpg" alt="pregunta" srcset="">
                     </a>
-                    <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+                    <div class="card-body text-center text-md-center text-lg-center">"¿Cómo bajar la grasa corporal?"
+                        Las preguntas más frecuentes sobre nutrición las podes 
+                        encontrar aqui, donde las respondo para poder ayudarte.
+                    </div>
                 </div>    
             </div>
 
-            <div  class="col-12 col-md-3">
-                <div class="card card-display">
+            <div  class="col-12 col-md-6 col-lg-3">
+                <div class="card card-display mb-5 mb-md-5">
                     <a href="pages/contacto.html">
                     <img class="card-img-top" src="img/euge_2.jpeg" alt="Euge en su consultorio" srcset="">
                 </a>
-                <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolorem error reprehenderit.</div>
+                <div class="card-body text-center text-md-center text-lg-center"> Podes tener tu consulta online o prescencial! <br> 
+                    Completá este formulario para tenerla en la forma que más comodo te quede.
+                </div>
             </div>
         </div>
     </section>
     
 <!-- pie de pagina -->
-    <footer class="bg-light">
+    <footer class="bg-green">
             <div class="container">
                 <div class="row pt-5 pb-5">
                     <div class="col-12 col-md-12 d-flex justify-content-center">
