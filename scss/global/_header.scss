@@ -1,0 +1,40 @@
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+header {
+    background-image: url("../img/portada_recetas.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+}
+
+#header-sobremi {
+    background-image: url("../img/portada_sobremi.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 20rem;
+}
+
+#header-contacto {
+    background-image: url("../img/portada_contacto2.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 20rem;
+}
+
+#header-recetas {
+    background-image: url("../img/portada_recetas2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+}
+
+
+#header-preguntas {
+    background-image: url("../img/portada_preguntas.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+}

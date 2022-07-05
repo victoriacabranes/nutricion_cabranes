@@ -1,0 +1,15 @@
+{
+  "author": "Victoria Cabranes",
+  "description": "proyecto coderhouse nutricion",
+  "license": "MIT",
+  "name": "nutricion-cabranes",
+  "scripts": {
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "node-sass --output-style compressed scss/styles.scss css/styles.css"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.4"
+  }
+}
