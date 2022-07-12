@@ -1,10 +1,18 @@
+$pink: #bb8588;
+$pink-light: #d8a48f;
+
+// aplique mixins
+@mixin button ($background-color, $border-color, $color) {
+    background-color: $background-color;
+    border-color: $border-color;
+    color: $color;
+}
+
+
 .btn-info {
-    background-color: #d8a48f;
-    border-color: #d8a48f;
-    color: white;
+    @include button($pink-light, $pink-light, white);
     &:hover {
-        background-color: #bb8588;
-        border-color: #bb8588;
+        @include button($pink, $pink, white )
     }
 }
 

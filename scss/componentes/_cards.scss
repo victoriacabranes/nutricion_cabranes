@@ -1,3 +1,18 @@
+// aplique mapa
+$styles: (
+    verde: #728662,
+    centro: center,
+    small: 1rem,
+);
+
+section {
+    div {
+        color: map-get($styles,verde);
+        font-size: map-get($styles, small);
+        text-align: map-get($styles, center );
+    }
+}
+
 .card-display {
     transition: all 1s;
     &:hover {
