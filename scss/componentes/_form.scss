@@ -1,8 +1,9 @@
 .border-form {
     border-radius: 10px;
     border: solid;
-    border-color: $pink-light;
+    border-color: white;
     border-width: 1px;
+    box-shadow: 5px 5px 19px 1px rgba(0,0,0,0.10);
 }
 
 .form-check {

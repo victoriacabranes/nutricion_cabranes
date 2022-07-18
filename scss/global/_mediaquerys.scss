@@ -1,34 +1,6 @@
 @media screen and (max-width : 480px) {
-    header {
-        background-image: none;
-        height: 0%;
-    }
-
-    #header-sobremi {
-        background-image: none;
-        height: 0%;
-    }
-
-    .display-3 {
-        font-size: 2rem;
-    }
-
-    #header-contacto {
-        background-image: none;
-        height: 0%;
-    }
-
-    #header-preguntas {
-        background-image: none;
-        height: 0%;
-    }
-
-    #header-recetas {
-        background-image: none;
-        height: 0%;
-    }
-
     .border-form {
         border: solid transparent;
+        padding: 2rem;
     }
 }
