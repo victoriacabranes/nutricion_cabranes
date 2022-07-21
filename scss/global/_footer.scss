@@ -2,15 +2,23 @@ footer {
     background-color: $green-light;
     p {
         color: $green;
+        font-size: 0.7rem;
+        padding-top: 1rem;
     }
 }
 
 .fa-solid {
     color: $green;
     margin: 1em ;
+    &:hover {
+        color: $pink;
+    }
 }
 
 .fa-brands {
     color: $green;
     margin: 1em;
+    &:hover {
+        color: $pink;
+    }
 }

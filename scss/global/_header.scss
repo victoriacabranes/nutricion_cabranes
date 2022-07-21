@@ -1,6 +1,7 @@
 .logo {
     width: 30px;
     height: auto;
+    margin-left: 1rem;
 }
 
 // aplique extend
@@ -13,7 +14,7 @@
 
 .header-sobremi {
     @extend .header;
-    background-image: url("../img/portada_sobremi.jpg");
+    background-image: url("../img/portada_sobremi2.jpg");
 }
 
 .header-contacto {
